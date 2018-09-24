@@ -70,7 +70,8 @@ public class Lab1_1 {
 	static int place3b;
 	static int place2b;
 	static int place1b;
-	static Scanner read = new Scanner(System.in); // Calling the scanner to allow user input.
+	static Scanner read = new Scanner(System.in); // Calling the scanner to allow user input. Forced to move Scanner from "letsGo() method. Must investigate further.
+	
 	public static void main(String[] args) {
 		letsGo(); // Originally, beginning of program was placed in a separate method because we
 					// were often calling back to the "letsGo()" method in order to loop in the way
@@ -91,7 +92,6 @@ public class Lab1_1 {
 
 		do { // Do loop is used to allow the process to repeat in case user enters integers
 				// that are not the same length or characters that are not integers.
-
 
 			try { // Try/catch statement allows program to not fall apart if user enters a too-big
 					// number or non-integer.
@@ -129,9 +129,7 @@ public class Lab1_1 {
 				length2 = 5;
 				System.out.println(
 						"That's not gonna work this time, friendo. We need you to put in integers only. Let's leave out the too-big numbers, the letters, and whatnot, please. \n \nNow, let's try that again, with the first integer.");
-			}System.out.println(length1 + "" + length2);
-
-
+			}
 		}
 		// While statement will loop the do statement until program receives two
 		// integers of the same number of digits. Perhaps the most important line of
@@ -351,6 +349,6 @@ public class Lab1_1 {
 
 	public static void onlyOne() {// You tried to give me single digits and undermine the entire program.
 		System.out.println(
-				"There's only one digit here. I mean, what do you expect to be here? We've technically done all of the same math, but you can't really compare the sums of a pair of digits when you've only got one pair to sum, now, can you? Do you think you're clever? Whose time are you trying to waste, ours or your own? What was even the point of this, if you're just going to try to be cute and input one digit numbers? Do you have any idea how much math is involved here, just for you to be cheeky? How many lines of code went into your little troll here? You know, what, don't even start over. The program is ending now. You don't get to calculate the sums of the digits of numbers anymore. Just go home, and leave us all in peace, will you? Jeez.");
+				"There's only one digit here. I mean, what do you expect to be here? We've technically done all of the same math, but you can't really compare the sums of pairs of digits when you've only got one pair to sum, now, can you? Do you think you're clever? Whose time are you trying to waste, ours or your own? What was even the point of this, if you're just going to try to be cute and input one digit numbers? Do you have any idea how much math is involved here, just for you to be cheeky? How many lines of code went into your little troll here? You know, what, don't even start over. The program is ending now. You don't get to calculate the sums of the digits of numbers anymore. Just go home, and leave us all in peace, will you? Jeez.");
 	}
 }
