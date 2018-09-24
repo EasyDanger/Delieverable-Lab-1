@@ -70,7 +70,7 @@ public class Lab1_1 {
 	static int place3b;
 	static int place2b;
 	static int place1b;
-	static Scanner read = new Scanner(System.in); // Calling the scanner to allow user input. Forced to move Scanner from "letsGo() method. Must investigate further.
+ // Calling the scanner to allow user input. Forced to move Scanner from "letsGo() method. Must investigate further.
 	
 	public static void main(String[] args) {
 		letsGo(); // Originally, beginning of program was placed in a separate method because we
@@ -81,6 +81,7 @@ public class Lab1_1 {
 	}
 
 	public static void letsGo() {
+
 //Flavor text and user explanations/prompts Could have used a single "println" command with (\n) line breaks, but the code looks neater this way, personally. Or, at least it did originally.
 		System.out.println(
 				"Hi! Today, we're going to compare some integers that you're going to enter. Sounds like fun, right?");
@@ -95,7 +96,7 @@ public class Lab1_1 {
 
 			try { // Try/catch statement allows program to not fall apart if user enters a too-big
 					// number or non-integer.
-
+		Scanner read = new Scanner(System.in);
 				firstNum = read.nextInt(); // Accepts first integer.
 				firstNum = Math.abs(firstNum); // Converts any pesky negative numbers trolls might try to enter.
 
@@ -105,7 +106,7 @@ public class Lab1_1 {
 
 				secNum = read.nextInt(); // Accepts second integer.
 				secNum = Math.abs(secNum); // Converts like for the first digit.
-
+read.close();
 //Determines number of digits for the two integers and stores those numbers for comparisons and flow control later.			
 				length1 = (int) (Math.log10(firstNum) + 1);
 				length2 = (int) (Math.log10(secNum) + 1);
